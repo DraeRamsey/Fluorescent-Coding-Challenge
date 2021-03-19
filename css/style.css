@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+/*=================================================================
+  Presets
+==================================================================*/
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #1D1D1D;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.spacer {
+  margin-bottom: 2.2rem;
+}
+
+.divider {
+  border-bottom: 1px solid #DFDFDF;
+}
+
+/*=================================================================
+    Product
+  ==================================================================*/
+.product {
+  padding: 30px 40px 40px 40px;
+  min-height: 100%;
+  display: flex;
+}
+
+.product__size-btn, .product__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.product__subheading {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.product__view img {
+  width: 100%;
+  padding: 10px 20px 10px 0px;
+  height: auto;
+}
+
+.product__view {
+  flex-basis: 69%;
+}
+
+.product__info {
+  align-self: flex-start;
+  flex-basis: 31%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  padding: 40px 0px 0px 40px;
+}
+
+.product__choice {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+  margin-bottom: 1rem;
+}
+
+.product__size-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 38px;
+  background-color: #F1F1F1;
+  padding: 8px 16px;
+  margin: 0px 8px 5px 0px;
+  transition: .3s ease-in-out;
+}
+
+.product__size-btn:hover, .product__size-btn--active {
+  background-color: #000;
+  color: white;
+}
+
+/*=================================================================
+  Media Queries
+==================================================================*/
+@media screen and (max-width: 600px) {}
