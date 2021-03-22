@@ -1,7 +1,7 @@
 # Fluorescent Coding Challenge
 
 This is a take-home challenge for Fluorescent Design Inc.
-Please view the finished page [here](http://www.google.com)
+Please view the finished page [here](https://draeramsey.github.io/Fluorescent-Coding-Challenge/)
 
 ## Overview
 
