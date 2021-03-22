@@ -5,8 +5,8 @@
   <link href="css/style.css" rel="stylesheet">
 
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="This is a take-home challenge for Fluorescent Design Inc.">
+  <meta name="keywords" content="shopify theme development, css, html, javascript, jquery, code challenge, web developer, victoria bc">
   <meta name="author" content="Andrea Ramsey">
 
   <title>Fluorescent Coding Challenge </title>
@@ -18,24 +18,23 @@
   <section class="product">
     <div class="product__view">
       <div class="product__img-container">
-          <img class="product__zoom" src="img/zoom.png" alt="">
-        <img class="product__img" src="img/red-trainers.png" alt="">
+        <img class="product__zoom" src="img/zoom.png" alt="">
+        <img class="product__img" id="red" src="img/red-trainers.png" alt="red flyknit trainer shoes">
+      </div>
+
+      <div class="product__img-container">
+        <img class="product__zoom" src="img/zoom.png" alt="">
+        <img class="product__img" id="green" src="img/green-trainers.png" alt="green flyknit trainer shoes">
       </div>
       <div class="product__img-container">
-          <img class="product__zoom" src="img/zoom.png" alt="">
-          <img class="product__img" src="img/green-trainers.png" alt="">
-      </div>
-    <div class="product__img-container">
         <img class="product__zoom" src="img/zoom.png" alt="">
-        <img class="product__img" id="test" src="img/black-trainers.png" alt="">
+        <img class="product__img" id="blue" src="img/blue-trainers.png" alt="blue flyknit trainer shoes">
+      </div>
     </div>
-    </div>
-
 
     <div class="product__info">
-      <h1> Red Flyknit Trainers </h1>
+      <h1 id="title"> Red Flyknit Trainers </h1>
       <p class="product__text spacer"> $190.00 </p>
-
 
       <p class="product__subheading"> Size </p>
       <div class="product__choice divider">
@@ -46,12 +45,17 @@
       </div>
 
       <p class="product__subheading"> Colour </p>
-      <div class="product__choice">
+      <div class="product__choice" id="product-choice">
 
-        <img class="product__color-btn product__color-btn--active" src="img/red.png" alt="">
-        <img class="product__color-btn" src="img/green.png" alt="">
-        <img class="product__color-btn" src="img/blue.png" alt="">
+        <a href="#red"><img class="product__color-btn product__color-btn--active" src="img/red.png" data-index="0">
+        </a>
 
+        <a class="" href="#green"><img class="product__color-btn" src="img/green.png" data-index="1">
+        </a>
+
+        <a href="#blue">
+          <img class="product__color-btn" src="img/blue.png" data-index="2">
+        </a>
       </div>
 
       <div class="product__cart-btn"> Add to Cart </div>
@@ -59,6 +63,7 @@
     </div>
   </section>
 
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
