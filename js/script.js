@@ -10,13 +10,6 @@ $(document).ready(function() {
     let product_index = $(this).data("index");
     $('#title').text(products[product_index] + " Flyknit Trainers")
 
-    toggleActive();
-
-
-  });
-
-
-  function toggleActive() {
     const active = $('.product__color-btn--active');
 
     if (active) {
@@ -25,7 +18,9 @@ $(document).ready(function() {
 
     const new_active = $(this);
     $(new_active).addClass('product__color-btn--active');
-  }
+
+
+  });
 
 
 });
