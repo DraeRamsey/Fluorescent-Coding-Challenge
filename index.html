@@ -18,16 +18,37 @@
   <section class="product">
     <div class="product__view">
       <div class="product__img-container">
-        <img class="product__zoom" src="img/zoom.png" alt="">
+        <div class="product__zoom-container">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
+            fill="#1D1D1D" />
+          <path d="M12 10H10V12H9V10H7V9H9V7H10V9H12V10Z" fill="#1D1D1D" />
+        </svg>
+        </div>
         <img class="product__img" id="red" src="img/red-trainers.png" alt="red flyknit trainer shoes">
       </div>
 
       <div class="product__img-container">
-        <img class="product__zoom" src="img/zoom.png" alt="">
+        <div class="product__zoom-container">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
+            fill="#1D1D1D" />
+          <path d="M12 10H10V12H9V10H7V9H9V7H10V9H12V10Z" fill="#1D1D1D" />
+        </svg>
+        </div>
         <img class="product__img" id="green" src="img/green-trainers.png" alt="green flyknit trainer shoes">
       </div>
       <div class="product__img-container">
-        <img class="product__zoom" src="img/zoom.png" alt="">
+        <div class="product__zoom-container">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
+            fill="#1D1D1D" />
+          <path d="M12 10H10V12H9V10H7V9H9V7H10V9H12V10Z" fill="#1D1D1D" />
+        </svg>
+        </div>
         <img class="product__img" id="blue" src="img/blue-trainers.png" alt="blue flyknit trainer shoes">
       </div>
     </div>
@@ -37,29 +58,48 @@
       <p class="product__text spacer"> $190.00 </p>
 
       <p class="product__subheading"> Size </p>
-      <div class="product__choice divider">
-        <div class="product__size-btn product__size-btn--active"> Small </div>
-        <div class="product__size-btn"> Medium </div>
-        <div class="product__size-btn"> Large </div>
-        <div class="product__size-btn"> Extra Large </div>
+
+      <div class="product__choice product__choice-size divider">
+
+        <input type="radio" id="small"  name="size" class=".product__size-btn " checked="checked">
+        <label for="small">
+          Small
+        </label>
+
+        <input type="radio" id="medium" name="size" class=".product__size-btn ">
+        <label for="medium">
+          Medium
+        </label>
+
+        <input type="radio" id="large" name="size" class=".product__size-btn ">
+        <label for="large">
+          Large
+        </label>
+
+        <input type="radio" id="extra-large" name="size" class=".product__size-btn ">
+        <label for="extra-large">
+          Extra Large
+        </label>
       </div>
 
       <p class="product__subheading"> Colour </p>
       <div class="product__choice" id="product-choice">
 
-        <a href="#red"><img class="product__color-btn product__color-btn--active" src="img/red.png" data-index="0">
+        <a href="#red" >
+          <div class="red product__color-btn product__color-btn--active" data-index="0">
+          </div>
         </a>
 
-        <a class="" href="#green"><img class="product__color-btn" src="img/green.png" data-index="1">
-        </a>
+        <a  href="#green">
+          <div class="green product__color-btn" data-index="1">
+        </div></a>
 
         <a href="#blue">
-          <img class="product__color-btn" src="img/blue.png" data-index="2">
-        </a>
+          <div class="blue product__color-btn" data-index="2">
+        </div></a>
       </div>
 
       <div class="product__cart-btn"> Add to Cart </div>
-    </div>
     </div>
   </section>
 
