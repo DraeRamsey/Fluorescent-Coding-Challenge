@@ -44,7 +44,7 @@ h1 {
   display: flex;
 }
 
-.product__cart-btn, .product__size-btn, .product__text, label  {
+.product__cart-btn, .product__size-btn, .product__text, label {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -84,15 +84,11 @@ h1 {
 
 .product__zoom {
   /* opacity: 0; */
-
-
 }
 
 /* new css zoom */
-
-
 .product__zoom-container {
-    z-index: 20;
+  z-index: 20;
   opacity: 0;
   border-radius: 50%;
   z-index: 20;
@@ -100,18 +96,15 @@ h1 {
   top: 20px;
   right: 20px;
   transition: .3s ease-in-out;
-
+  pointer-events: none;
   width: 40px;
   height: 40px;
   background: #FFFFFF;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
-
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-
 
 .product__view {
   flex-basis: 69%;
@@ -120,7 +113,8 @@ h1 {
 .product__info {
   align-self: flex-start;
   flex-basis: 31%;
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky;
+  /* Safari */
   position: sticky;
   top: 0;
   padding: 40px 0px 0px 40px;
@@ -145,13 +139,13 @@ h1 {
 }
 
 /* product size variants */
-input[type='radio']{
+input[type='radio'] {
   visibility: hidden;
-   width:0px;
-  height:0px;
+  width: 0px;
+  height: 0px;
 }
 
-.product__choice-size label{
+.product__choice-size label {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -162,7 +156,7 @@ input[type='radio']{
   margin: 0px 8px 5px 0px;
 }
 
-.product__choice-size label:hover, .product__choice input[type="radio"]:checked+label{
+.product__choice-size label:hover, .product__choice input[type="radio"]:checked+label {
   background-color: #000;
   color: white;
 }
@@ -177,15 +171,13 @@ input[type='radio']{
 }
 
 .product__color-btn {
-
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  border: 1px solid  #DEDEDE;
+  border: 1px solid #DEDEDE;
   box-shadow: inset 0 0 0 2px white;
   margin: 0px 8px 5px 0px;
 }
-
 
 .product__color-btn:hover, .product__color-btn--active {
   border: 1px solid #1B1B1B;
@@ -193,26 +185,24 @@ input[type='radio']{
 
 /* color swatches */
 .product__color_btn {
-
   width: 32px;
   height: 32px;
   border-radius: 50%;
   border: 1px solid #1b1b1b;
   box-shadow: inset 0 0 0 2px white;
-    margin: 0px 8px 5px 0px;
-
+  margin: 0px 8px 5px 0px;
 }
 
-.red{
-  background: linear-gradient( -45deg, #AC5941, #AC5941 50%, #8A3D28 50% );
+.red {
+  background: linear-gradient(-45deg, #AC5941, #AC5941 50%, #8A3D28 50%);
 }
 
-.green{
-    background: linear-gradient( -45deg, #419FAC, #419FAC 50%, #1F737E 50% );
+.green {
+  background: linear-gradient(-45deg, #419FAC, #419FAC 50%, #1F737E 50%);
 }
 
-.blue{
-    background: linear-gradient( -45deg, #416CAC, #416CAC 50%, #1F2E7E 50% );
+.blue {
+  background: linear-gradient(-45deg, #416CAC, #416CAC 50%, #1F2E7E 50%);
 }
 
 .product__cart-btn {
@@ -227,7 +217,6 @@ input[type='radio']{
 /*=================================================================
   Media Queries
 ==================================================================*/
-
 @media screen and (max-width: 600px) {
   .product {
     flex-direction: column;
@@ -248,7 +237,6 @@ input[type='radio']{
   .product__img-container {
     width: 100%;
     overflow: initial;
-
   }
 
   ::-webkit-scrollbar {
