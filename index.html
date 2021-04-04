@@ -9,10 +9,11 @@
   <meta name="author" content="Andrea Ramsey">
   <title>Fluorescent Coding Challenge </title>
 </head>
+
 <body>
   <section class="product">
     <div class="product__view">
-      <div class="product__img-container">
+      <div class="product__img-container" id="red">
         <div class="product__zoom-container">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -21,10 +22,10 @@
             <path d="M12 10H10V12H9V10H7V9H9V7H10V9H12V10Z" fill="#1D1D1D" />
           </svg>
         </div>
-        <img class="product__img" id="red" src="img/red-trainers.png" alt="red flyknit trainer shoes">
+        <img class="product__img" src="img/red-trainers.png" alt="red flyknit trainer shoes">
       </div>
 
-      <div class="product__img-container">
+      <div class="product__img-container" id="green">
         <div class="product__zoom-container">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -33,9 +34,9 @@
             <path d="M12 10H10V12H9V10H7V9H9V7H10V9H12V10Z" fill="#1D1D1D" />
           </svg>
         </div>
-        <img class="product__img" id="green" src="img/green-trainers.png" alt="green flyknit trainer shoes">
+        <img class="product__img" src="img/green-trainers.png" alt="green flyknit trainer shoes">
       </div>
-      <div class="product__img-container">
+      <div class="product__img-container" id="blue">
         <div class="product__zoom-container">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -44,7 +45,7 @@
             <path d="M12 10H10V12H9V10H7V9H9V7H10V9H12V10Z" fill="#1D1D1D" />
           </svg>
         </div>
-        <img class="product__img" id="blue" src="img/blue-trainers.png" alt="blue flyknit trainer shoes">
+        <img class="product__img" src="img/blue-trainers.png" alt="blue flyknit trainer shoes">
       </div>
     </div>
 
@@ -72,20 +73,20 @@
       </div>
       <p class="product__subheading"> Colour </p>
       <div class="product__choice" id="product-choice">
-        <a href="#red">
-          <div class="red product__color-btn product__color-btn--active" data-index="0">
-          </div>
-        </a>
 
-        <a href="#green">
-          <div class="green product__color-btn" data-index="1">
-          </div>
-        </a>
+        <div class="red product__color-btn product__color-btn--active" data-index="0">
+        </div>
 
-        <a href="#blue">
-          <div class="blue product__color-btn" data-index="2">
-          </div>
-        </a>
+
+
+        <div class="green product__color-btn" data-index="1">
+        </div>
+
+
+
+        <div class="blue product__color-btn" data-index="2">
+        </div>
+
       </div>
 
       <div class="product__cart-btn"> Add to Cart </div>
